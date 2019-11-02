@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<title>E-commerce</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link type="text/css" href="css/theme.css" rel="stylesheet">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="homepage.html">Summer69</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item navbar-right">
+                <a class="nav-link" href="form.html"><i class="fa fa-cart-plus" style="font-size:20px"></i> Add product</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search for items" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    <div class="container" >
+        <h1>New Product</h1>
+    <form id="productForm" >
+        <div class="form-group">
+                <input class="form-control" id="name" type="text" placeholder ="Name" name="name">
+                <br>
+                <input class="form-control" id="productDetail" type="text" placeholder="Product Detail" name="productDetail">
+                <br>
+                <input class="form-control" id="url" type="url" placeholder="Product Image"  name="url">
+                <br>
+                <input class="form-control" id="quantity" type="number" placeholder="Quantity" name="quantity">
+                <br>
+                <div class="input-group">
+                    <span class="input-group-addon" style="font-size: 30px; padding: 5px ; ">$ </span>
+                    <input type="text" class="form-control" placeholder="price" name="price">
+                  </div>
+                  <br>
+                <button class="btn btn-info btn-lg" id="submitBtn" type="submit">Submit</button>
+                <button class="btn btn-default btn-lg">Cancel </button>
+        </div>
+        <h6 id="notice" class="text-success">The Product Section has been updated !</h6>
+    </form>
+    </div>
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/homepage.js"></script>
+    </body>
+    </html>
