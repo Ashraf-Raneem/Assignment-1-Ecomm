@@ -1,12 +1,12 @@
 $("#firstElement").hide(); 
-
+//window.localStorage.clear();
 var product  = JSON.parse(window.localStorage.getItem('productItems'));
 console.log(product); 
     if (product ==null){
 
         var product = [{
             name: "Denim Jacket",
-            productDetail:"This is a figuarene",
+            productDetail:"Lorem ipsum dolor sit amet, consectetur  ",
             url: "img/denimJacket.jpg",
             quantity: "5",
             price: "1500"
@@ -117,7 +117,9 @@ $('#productForm').submit(function(event){
     window.localStorage.setItem('productItems', JSON.stringify(product));
    // var productItems = JSON.parse(window.localStorage.getItem('productItems'));
     //console.log(productItems);
+    location.reload(true);
     $("#notice").show(); 
+    
 });
 
 var cart = []; 
