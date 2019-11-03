@@ -23,10 +23,11 @@ There are several HTML pages included:
 
     It includes all the items in the system. It shows it in cards which are generated using the bootstrap library. The backend work is carried out by a javascript file. 
 
-    <img src="img/screenshots/openingPage">
+    <img src="img/screenshots/openingPage.png">
 
     -Product View
-    <img src="img/screenshots/Homepage.png">
+
+    <img src="img/screenshots/HomePage.png">
 
 * Form Page
 
