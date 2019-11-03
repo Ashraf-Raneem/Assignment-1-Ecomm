@@ -8,6 +8,12 @@ $.each(product,function(i,value){
     // console.log(product[i].name)
         if(product[i].name == cart[j]){
 
+            var tableImage = $("<img>",{
+                class: "cartImage",
+                src: product[i].url,
+                
+            })
+
             var tableName = $("<h3>",{
                 class:"header"
             }).text(product[i].name); 
@@ -29,7 +35,7 @@ $.each(product,function(i,value){
             }).text("Remove Item")
             //correspondingPrice.push(s)
 
-/*
+
             var mainDiv = $("<div>",{
                 class: "d-flex justify-content-between mainDiv border-bottom",
                 style: "margin-bottom:10px "
@@ -42,21 +48,25 @@ $.each(product,function(i,value){
                 class: "d-flex justify-content-center"
             }).append(tableQuantity); 
 
+            var PriceDiv = $("<div>",{
+                class: "d-flex justify-content-center"
+            }).append(priceSpan,tablePrice); 
+
             var endDiv = $("<div>",{
                 class: "d-flex justify-content-end"
-            }).append(tablePrice,tableButton); 
+            }).append(tableButton); 
 
-            mainDiv = mainDiv.append(leftDiv,midDiv,endDiv); 
+            mainDiv = mainDiv.append(leftDiv,midDiv,PriceDiv,endDiv); 
             $(".cartItemsView").append(mainDiv);          
-*/
+/*
             var divTable = $("<div>",{
-                class: "cartContainer"
-            }).append(tableName,tablePrice,tableQuantity,tableButton)
+                class: "cartContainer border-bottom"
+            }).append(tableImage,tableName,tablePrice,tableQuantity,tableButton)
             $(".row").append(divTable)
-            
+    */        
         }
         
-        if (cart[j]== null){
+        if(cart.length===0){
             var cover = $("<h2>").text("Your cart is currently empty")
             $(".cartItemsView").append(cover); 
         }
@@ -79,9 +89,10 @@ $.each(product,function(i,value){
     
 
 $(".removeBtn").click(function(){
-    var removeItem = $(this).parent().children(".header"); 
-    cart =  cart.splice($.inArray(removeItem,cart),1); 
-    window.localStorage.setItem("cart",JSON.stringify(cart))
+    var itemsRemove = JSON.parse(window.localStorage.getItem("cart"))
+    var removeItem = $(this).parent().prev().prev().prev().children(".header").text(); 
+    itemsRemove.splice($.inArray(removeItem,itemsRemove),1); 
+    window.localStorage.setItem("cart",JSON.stringify(itemsRemove))
     location.reload(true);
     
 })

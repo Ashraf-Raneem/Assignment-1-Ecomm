@@ -13,29 +13,15 @@ console.log(product);
         }]
             window.localStorage.setItem('productItems',JSON.stringify(product)); 
     }
-/*var window = document.getElementById("1stcol-display").innerHTML ; 
-window = product.innerHTML; 
-document.body.append(window);
-*/
-/*
-product.forEach(function(elements){
-    // $("#1stcol-display").text(elements["price"])
-    /*let div= $("<div>").attr("class", "col-sm-4"); 
-    $(".row").append(div); 
-    let itemName = $("<h1>").text(elements["name"]);
-    let itemPrices = $("<h4>").text("$"+" "+ elements["price"]);
 
-    $(".row").append(); 
-})
-*/
 $(".cartBtn").click(function(){
     window.open("cartView.html");
 })
-cart = window.localStorage.getItem("cart"); 
+cart = JSON.parse(window.localStorage.getItem("cart")); 
 
 var cartLength
 if(cart != null){
-    cartLength = cart.length
+    cartLength = cart.length;
 }
 else{
     cartLength = 0
@@ -59,6 +45,7 @@ product.forEach(function(e){
     var divCardImage = $("<img>",{
         class:"card-img-top",
         src: e['url'],
+        
     })
 
     var divCardBody = $("<div>",{
@@ -139,16 +126,4 @@ $(".cart-btn").click(function(){
     location.reload(true);
 })
 console.log(JSON.parse(window.localStorage.getItem("cart")));
-/*
- var finaldata = [15,{name: 25}]
- var eachData= {}; 
-$("#my-form").submit(function(event){
-    var data = $(this).serializeArray();
-    data.forEach(function(x){
-        eachData[x.name]= x.value; 
-    });
-        finaldata.push(eachData); 
-        console.log(finaldata);  
-    
-    event.preventDefault();
-    */
+

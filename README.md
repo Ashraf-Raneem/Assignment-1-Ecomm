@@ -1,4 +1,4 @@
-# Assignment-1-Ecommmmerce
+# Assignment-1-Ecommerce
 This is a project of an offline ecommerce website "Summer69" with the basic functionalities using:
 1. HTML
 2. CSS
@@ -23,17 +23,26 @@ There are several HTML pages included:
 
     It includes all the items in the system. It shows it in cards which are generated using the bootstrap library. The backend work is carried out by a javascript file. 
 
+    <img src="img/screenshots/openingPage">
+
+    -Product View
+    <img src="img/screenshots/Homepage.png">
+
 * Form Page
 
     A form is used to add new products to the system for the users. 
 
+   <img src="img/screenshots/FormPage.png">
 * Single View Page
 
     This page displays information of the product selected. It only triggers if the image of the product is clicked
+
+    <img src="img/screenshots/SinglePage.png">
 
 * Cart View
 
     This page displays the information of the items selected on the cart and the total price of the products selected.  
 
+    <img src="img/screenshots/CartView.png">
 
 
