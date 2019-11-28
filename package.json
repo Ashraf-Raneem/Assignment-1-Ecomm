@@ -1,0 +1,25 @@
+{
+  "name": "assignment-1-ecomm",
+  "version": "1.0.0",
+  "description": "This is a project of an offline ecommerce website \"Summer69\" with the basic functionalities using:\r 1. HTML\r 2. CSS\r 3. Javascript\r 4. Jquery\r 5. Bootstrap Library",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashraf-Raneem/Assignment-1-Ecomm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ashraf-Raneem/Assignment-1-Ecomm/issues"
+  },
+  "homepage": "https://github.com/Ashraf-Raneem/Assignment-1-Ecomm#readme",
+  "dependencies": {
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  }
+}

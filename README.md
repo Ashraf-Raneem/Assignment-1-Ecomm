@@ -34,6 +34,7 @@ There are several HTML pages included:
     A form is used to add new products to the system for the users. 
 
    <img src="img/screenshots/FormPage.png">
+
 * Single View Page
 
     This page displays information of the product selected. It only triggers if the image of the product is clicked
